@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Test de Primalité de Fermat</title>
+</head>
+<body class="body">
+    <div class="logo-container">
+        <img src="../static/image /Logo,_USTHB.png" alt="logo" class="logo">
+    </div>
+    <div class="container">
+        <h1>Test de Primalité de Fermat</h1>
+        <form action="/test" method="POST"> 
+            <label for="number">Entrez un nombre :</label>
+            <input type="number" id="number" name="number" placeholder="Saisissez un nombre ici" required>
+            <button type="submit">Tester</button>
+        </form>
+        <div id="result">
+            {% if result is not none %}
+               <p class="{{ result_class }}">{{ result }}</p>
+            {% endif %}
+        </div>
+    </div>
+    <dir class="name">
+        <p>NEGHOUCHE Serine </p>
+    </dir>
+</body>
+</html>
+
