@@ -23,7 +23,7 @@ def puissance(n, a=2):
                 p = p * p  
             s *= p
     return s
-print (puissance(n))
+
 
 def est_premier(n): # teste de primalité avec la methode d'essai 
     if n <= 1:  # Les nombres <= 1 ne sont pas premiers
